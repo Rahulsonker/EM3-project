@@ -1,0 +1,120 @@
+/* #main{
+    height: 100%;
+    width: 100%;
+    background-color: #010101;
+} */
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 9vh;
+    width: 100%;
+    background-color: rgb(5, 4, 4);
+    padding: 0 60px;
+}
+#nav #logo img{
+    width: 20vh;
+}
+#nav #logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#navlinks{
+    font-size: 2.2vh;
+    font-family:sans-serif;
+    font-weight: 100;
+}
+#navlinks ul{
+list-style: none;
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
+#navlinks ul li a{
+    text-decoration: none;
+    color: white;
+}
+#nav ul h1{
+    color: white;
+    font-size:5vh;
+    font-weight: normal;
+}
+#navlinks ul li a:hover{
+    /* background-color: #FF5C28 ; */
+    color: #FF5C28;
+    padding: 0px 0px;
+}
+#nav #rightnav{
+    font-size: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#nav #rightnav #log{
+    /* padding: 1.5vh 3vh; */
+    font-size:2.2vh;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#nav #rightnav #subscribe {
+    background-color: white;
+    padding: 1.5vh 1.8vh;
+    border-radius: 30px;
+    font-size: 1.6vh;
+    font-weight: 900;
+    cursor: pointer;
+    animation: pulse 1s alternate;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+#rightnav h1{
+    color: white;
+    font-size:5vh;
+    font-weight: normal;
+}
+#rightnav #subscribe:hover {
+    color: #ffffff;
+    background-image:repeating-linear-gradient(45deg,#010101,#161515);
+    border: 2px solid  #f52222;
+    transform: scale(1.1); /* You can adjust the scale factor as needed */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    font-size: 1.8vh;
+}
+#nav #rightnav #log:hover{
+    color: #FF5C28;
+}
+
+
+/* subscribe button animation */
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      color: #f52222;
+      background-image:repeating-linear-gradient(45deg,yellow,green,violet);
+
+    }
+    30%{
+      transform: scale(2);
+      color: rgb(255, 255, 255);
+      background-image:repeating-linear-gradient(45deg,rgb(255, 31, 31),purple,violet);
+    }
+    50% {
+      transform: scale(1.1);
+      /* color: yellow; */
+      background-image:repeating-linear-gradient(45deg,rgb(25, 251, 25),rgb(240, 55, 240),rgb(234, 255, 6));
+
+    }
+    100% {
+      transform: scale(-0);
+      background-color: #f52222;
+      color: white;
+    }
+  }
+
+  
