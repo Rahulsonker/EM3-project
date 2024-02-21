@@ -1,5 +1,7 @@
+#main{
+    padding-top: 9vh;
+    background-color: rgb(29, 111, 199);
+}
 h1{
-    text-align: center;
-    color: navy;
-    background-color: yellow;
+    color: white;
 }

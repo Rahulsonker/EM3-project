@@ -4,13 +4,16 @@
     background-color: #010101;
 } */
 #nav{
+    padding-top: 9vh;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 9vh;
     width: 100%;
     background-color: rgb(5, 4, 4);
-    padding: 0 60px;
+    padding: 0 40px;
+    z-index: 100000;
 }
 #nav #logo img{
     width: 20vh;
@@ -63,10 +66,10 @@ align-items: center;
 }
 #nav #rightnav #subscribe {
     background-color: white;
-    padding: 1.5vh 1.8vh;
+    padding: 1.5vh 2vh;
     border-radius: 30px;
-    font-size: 1.6vh;
-    font-weight: 900;
+    font-size: 1.5vh;
+    font-weight: 600;
     cursor: pointer;
     animation: pulse 1s alternate;
     animation-duration: 2s;
@@ -81,9 +84,8 @@ align-items: center;
     color: #ffffff;
     background-image:repeating-linear-gradient(45deg,#010101,#161515);
     border: 2px solid  #f52222;
-    transform: scale(1.1); /* You can adjust the scale factor as needed */
+    transform: scale(0.9); /* You can adjust the scale factor as needed */
     transition: transform 0.3s ease; /* Add a smooth transition effect */
-    font-size: 1.8vh;
 }
 #nav #rightnav #log:hover{
     color: #FF5C28;
